@@ -7,7 +7,7 @@ Welcome to my GitHub! I'm currently a Master's student in **Computer Science** a
 ### 👤 About Me
 
 - **Name**: Yuxiang Zhao (赵宇翔)
-- **Current Location**: Shanghai, China 🇨🇳
+- **Current Location**: Shanghai, China
 - **University**: Shanghai Jiao Tong University
   - **Current Program**: Master's in Computer Science
   - **Undergraduate Program**: Bachelor's in Civil Engineering
@@ -31,7 +31,6 @@ Welcome to my GitHub! I'm currently a Master's student in **Computer Science** a
 
 ### 📫 Connect with Me
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com)
+- **Email**: [yuxiangzhao@sjtu.edu.cn](mailto:yuxiangzhao@sjtu.edu.cn)
 
 Thank you for visiting my profile! Feel free to reach out or explore my repositories.
