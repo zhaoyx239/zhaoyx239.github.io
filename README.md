@@ -1,6 +1,6 @@
 # Hi there, I'm Yuxiang Zhao 👋
 
-Welcome to my GitHub! My research interests focus on speech processing, including text-to-speech synthesis, synthetic speech authentication and watermarking, and speech translation.
+Welcome to my GitHub! My research interests focus on speech processing, including text-to-speech synthesis, synthetic speech deepfake detection and watermarking, and speech translation.
 
 ---
 
@@ -25,7 +25,7 @@ Welcome to my GitHub! My research interests focus on speech processing, includin
 
 #### Traceable TTS: Toward Watermark-Free TTS with Strong Traceability
 - **Duration**: November 2024 - April 2025
-- **Description**: Proposed a novel framework for model attribution in TTS systems. Instead of embedding watermarks, we train the TTS model and discriminator using a joint training method that significantly improves traceability generalization while preserving audio quality. This is the first work toward watermark-free TTS with strong traceability.
+- **Description**: Proposed a novel framework for model attribution in TTS systems. Instead of embedding watermarks, we train the TTS model and discriminator using a joint training method that significantly improves traceability generalization while preserving audio quality.
 - **Paper**: [https://arxiv.org/abs/2507.03887](https://arxiv.org/abs/2507.03887)
 - **Code**: [https://github.com/zhaoyx239/Traceable-TTS](https://github.com/zhaoyx239/Traceable-TTS)
 
