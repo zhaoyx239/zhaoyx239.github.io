@@ -1,18 +1,19 @@
 # Hi there, I'm Yuxiang Zhao 👋
 
-Welcome to my GitHub! I'm currently a Master's student in **Computer Science** at **Shanghai Jiao Tong University**. I hold a Bachelor's degree in **Civil Engineering** from the same university.
+Welcome to my GitHub! My research interests focus on speech processing, including text-to-speech synthesis, synthetic speech authentication and watermarking, and speech translation.
 
 ---
 
 ### 👤 About Me
 
 - **Name**: Yuxiang Zhao (赵宇翔)
-- **Current Location**: Shanghai, China
-- **University**: Shanghai Jiao Tong University
-  - **Current Program**: Master's in Computer Science
-    - **Lab**: X-LANCE
+- **Current Location**: Suzhou, China
+- **Education**:
+  - **Master of Science in Computer Science**, Shanghai Jiao Tong University (Sep 2024 - Present)
+    - **Lab**: X-LANCE Lab
     - **Advisor**: Prof. Xie Chen
-  - **Undergraduate Program**: Bachelor's in Civil Engineering
+  - **Bachelor of Engineering in Civil Engineering**, Shanghai Jiao Tong University (Sep 2020 - Jun 2024)
+- **Internship**: AISpeech (思必驰), July 2025 - Present
 
 ---
 
