@@ -1,10 +1,7 @@
 # Yuxiang Zhao
 
-I am a master's student in the School of Computer Science at Shanghai Jiao Tong University, working with Prof. Xie Chen in the Cross-Media Language Intelligence Lab. My research focuses on speech translation, speech security, speech anonymization, speech synthesis, and real-time spoken interaction.
-
 - **Email**: [yuxiangzhao@sjtu.edu.cn](mailto:yuxiangzhao@sjtu.edu.cn)
-- **Homepage**: [https://zhaoyx239.github.io/](https://zhaoyx239.github.io/)
-- **Research Interests**: speech translation, speech-to-speech systems, speech security, voice anonymization, TTS traceability
+- **Research Interests**: speech translation, speech security
 
 ---
 
@@ -12,18 +9,11 @@ I am a master's student in the School of Computer Science at Shanghai Jiao Tong 
 
 ### Shanghai Jiao Tong University
 **M.S. Student, School of Computer Science** | Sep. 2024 - Present
-
-- **GPA**: 3.72/4.0
-- **Lab**: Cross-Media Language Intelligence Lab
+- **Lab**: X-LANCE Lab
 - **Advisor**: Prof. Xie Chen
-- **Selected Courses**: Neural Network Theory and Applications (A+), Algorithm Design and Analysis (A), Large-Scale Data Processing Technology (A)
 
 ### Shanghai Jiao Tong University
 **B.Eng. in Civil Engineering** | Sep. 2020 - Jun. 2024
-
-- **GPA**: 81.78, ranked 20/45
-- **Honors**: Outstanding Graduate of Shanghai Jiao Tong University, Huang Jinzhi Civil Engineering and Architecture Scholarship, SJTU Undergraduate Scholarship, Merit Student, Outstanding League Member
-- **Skills**: Python, C++
 
 ---
 
