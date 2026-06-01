@@ -1,77 +1,84 @@
 # Yuxiang Zhao
 
-Hi, I am Yuxiang Zhao (赵宇翔), a master's student at Shanghai Jiao Tong University. My research focuses on speech translation, speech interaction, speech synthesis, voice conversion, and speech security.
+I am a master's student in the School of Computer Science at Shanghai Jiao Tong University, working with Prof. Xie Chen in the Cross-Media Language Intelligence Lab. My research focuses on speech translation, speech security, speech anonymization, speech synthesis, and real-time spoken interaction.
 
 - **Email**: [yuxiangzhao@sjtu.edu.cn](mailto:yuxiangzhao@sjtu.edu.cn)
 - **Homepage**: [https://zhaoyx239.github.io/](https://zhaoyx239.github.io/)
+- **Research Interests**: speech translation, speech-to-speech systems, speech security, voice anonymization, TTS traceability
 
 ---
 
 ## Education
 
 ### Shanghai Jiao Tong University
-**M.S. in Electronic Information** | Sep. 2024 - Present
+**M.S. Student, School of Computer Science** | Sep. 2024 - Present
 
-- **GPA**: 3.72/4.0, ranked 46/149
+- **GPA**: 3.72/4.0
 - **Lab**: Cross-Media Language Intelligence Lab
 - **Advisor**: Prof. Xie Chen
-- **Research Interests**: speech translation, speech interaction, speech security
 - **Selected Courses**: Neural Network Theory and Applications (A+), Algorithm Design and Analysis (A), Large-Scale Data Processing Technology (A)
 
 ### Shanghai Jiao Tong University
 **B.Eng. in Civil Engineering** | Sep. 2020 - Jun. 2024
 
 - **GPA**: 81.78, ranked 20/45
+- **Honors**: Outstanding Graduate of Shanghai Jiao Tong University, Huang Jinzhi Civil Engineering and Architecture Scholarship, SJTU Undergraduate Scholarship, Merit Student, Outstanding League Member
+- **Skills**: Python, C++
 
 ---
 
 ## Research Experience
 
-### Speech-to-Speech Translation
+### Speech Translation and Low-Latency Simultaneous Interpretation
 **Oct. 2025 - Present**
 
-- Built a cascaded speech-to-speech translation system for low-latency spoken interaction scenarios.
-- Integrated ASR, machine translation, and TTS to achieve end-to-end translation with 3-5 seconds of latency.
-- Added voice cloning support and explored system design for real-time performance and extensibility.
-- **Demo**: [https://translate.sjtuxlance.com/](https://translate.sjtuxlance.com/)
+- Built **X-Translator**, a cascaded ASR+MT+TTS speech-to-speech translation system for real-time spoken interaction, achieving 3-5 seconds of end-to-end latency with voice cloning support.
+- Designed a multidimensional evaluation framework for speech translation, covering speech-to-text translation, speech-to-speech translation, offline generation, and streaming generation.
+- Evaluated translation quality, speech quality, speaker preservation, emotion and paralinguistic fidelity, temporal consistency, and streaming latency in a unified protocol.
+- Studied machine translation training without target-language data by using LLM-generated synthetic target-side data to train compact NMT models, analyzing the effects of distribution coverage, sample quality, and sequence-level supervision.
 
-### Synthetic Bridge Training for Machine Translation without Target Data
-**Jan. 2025 - May 2025**
+### Speech Security, Anonymization, and Traceable Generation
+**Oct. 2024 - Oct. 2025**
 
-- **Status**: Submitted to EMNLP 2026
-- **Role**: First author
-- Studied machine translation training without target-language data by using large-model-generated synthetic data to train and analyze small-scale NMT models.
-- Found that models can still achieve stable performance under purely synthetic data settings, with sequence-level supervision significantly outperforming token-level distillation; performance is mainly affected by data distribution coverage rather than single-sample quality.
-- **Paper**: [TODO](TODO)
+- Proposed a watermark-free TTS traceability framework that jointly trains a generation model and discriminator for model-level attribution while preserving speech quality.
+- Improved traceability robustness and generalization in cross-domain scenarios without relying on explicit speech watermarks.
+- Built a utility-preserved speech anonymization framework that combines flow-matching-based speaker anonymization with generative content editing.
+- Reduced identity and content leakage risks while preserving the usefulness of anonymized data for downstream ASR, TTS, and other speech tasks.
 
-### Traceable TTS: Toward Watermark-Free TTS with Strong Traceability
-**Oct. 2024 - Apr. 2025**
+---
 
-- **Status**: Submitted to Interspeech 2026
-- **Role**: First author
-- Proposed a watermark-free TTS traceability framework for security risks caused by highly realistic speech synthesis.
-- Jointly trained the generation model and discriminator to enable model-level attribution while preserving speech quality, improving cross-domain traceability and generalization.
-- **Paper**: [https://arxiv.org/abs/2507.03887](https://arxiv.org/abs/2507.03887)
-- **Code**: [https://github.com/zhaoyx239/Traceable-TTS](https://github.com/zhaoyx239/Traceable-TTS)
+## Publications
 
-### Anonymization, Not Elimination: Utility-Preserved Speech Anonymization
-**Oct. 2024 - Sep. 2025**
+1. <strong>Yuxiang Zhao</strong>, Yunchong Xiao, Yushen Chen, Zhikang Niu, Shuai Wang, Kai Yu, Xie Chen<sup>&dagger;</sup>.  
+   **Traceable TTS: Toward Watermark-Free TTS with Strong Traceability.**  
+   Submitted to INTERSPEECH 2026.  
+   [[Paper](https://arxiv.org/abs/2507.03887)] [[Code](https://github.com/zhaoyx239/Traceable-TTS)]
 
-- **Status**: Accepted by TASLP
-- **Role**: Co-first author, listed second
-- Worked on speech privacy protection and data usability, proposing a unified speech and content anonymization framework.
-- Combined flow-matching-based speaker anonymization with generative content editing to reduce identity and content leakage risks while preserving trainability and data utility for downstream ASR and TTS tasks.
-- **Paper**: [https://ieeexplore.ieee.org/abstract/document/11493752](https://ieeexplore.ieee.org/abstract/document/11493752)
+2. <strong>Yuxiang Zhao</strong>, Yanjie An, Hanzheng Li, Xuhui Shen, Keqi Deng, Shuai Fan, Kai Yu, Xie Chen<sup>&dagger;</sup>.  
+   **Distilling Compact Machine Translation Models from Synthetic Target-Side Data.**  
+   Submitted to EMNLP 2026.
 
-### X-VC: Zero-shot Streaming Voice Conversion in Codec Space
-**Sep. 2025 - Mar. 2026**
+3. Yunchong Xiao<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Ziyang Ma, Shuai Wang, Kai Yu, Jiachun Liao, Xie Chen<sup>&dagger;</sup>.  
+   **Anonymization, Not Elimination: Utility-Preserved Speech Anonymization.**  
+   IEEE Transactions on Audio, Speech and Language Processing, 2026.  
+   [[IEEE](https://ieeexplore.ieee.org/abstract/document/11493752)] [[arXiv](https://arxiv.org/abs/2604.17000)]
 
-- **Status**: Submitted to ACM MM 2026
-- **Role**: Second author
-- Studied the trade-off between latency and quality for zero-shot voice conversion in real-time interaction scenarios.
-- Implemented streaming voice conversion in neural codec space by combining conditional modeling, adaptive normalization, and chunked inference, improving speaker similarity and intelligibility under low-latency constraints.
-- **Paper**: [https://arxiv.org/abs/2604.12456](https://arxiv.org/abs/2604.12456)
-- **Code**: [https://github.com/Jerrister/X-VC](https://github.com/Jerrister/X-VC)
+4. Yanjie An<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang, Qixi Zheng, Yujie Tu, Keqi Deng, Kai Yu, Xie Chen<sup>&dagger;</sup>.  
+   **OpenSTBench: Beyond Semantic Evaluation for Speech Translation.**  
+   Submitted to EMNLP 2026.  
+   [[Paper](https://arxiv.org/abs/2605.30792)] [[Code](https://github.com/sjtuayj/OpenSTBench)]
+
+5. Qixi Zheng, <strong>Yuxiang Zhao</strong>, Tianrui Wang, Wenxi Chen, Kele Xu, Yikang Li, Qinyuan Chen, Xipeng Qiu, Kai Yu, Xie Chen<sup>&dagger;</sup>.  
+   **X-VC: Zero-shot Streaming Voice Conversion in Codec Space.**  
+   Submitted to ACM MM 2026.  
+   [[Paper](https://arxiv.org/abs/2604.12456)] [[Code](https://github.com/Jerrister/X-VC)] [[Demo](https://x-vc.github.io/)]
+
+6. Ruiqi Yan, Wenxi Chen, Zhanxun Liu, Ziyang Ma, Haopeng Lin, Hanlin Wen, Hanke Xie, Jun Wu, Yuzhe Liang, <strong>Yuxiang Zhao</strong>, Pengchao Feng, Jiale Qian, Hao Meng, Yuhang Dai, Shunshun Yin, Ming Tao, Lei Xie, Kai Yu, Xinsheng Wang, Xie Chen<sup>&dagger;</sup>.  
+   **SoulX-Duplug: Plug-and-Play Streaming State Prediction Module for Realtime Full-Duplex Speech Conversation.**  
+   Submitted to INTERSPEECH 2026.  
+   [[Paper](https://arxiv.org/abs/2603.14877)] [[Code](https://github.com/Soul-AILab/SoulX-Duplug)] [[Model](https://huggingface.co/Soul-AILab/SoulX-Duplug-0.6B)] [[Dataset](https://huggingface.co/datasets/Soul-AILab/SoulX-Duplug-Eval)] [[Demo](https://soulx-duplug.sjtuxlance.com/)]
+
+<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.
 
 ---
 
