@@ -51,7 +51,7 @@
 3. Yunchong Xiao<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Ziyang Ma, Shuai Wang, Kai Yu, Jiachun Liao, Xie Chen<sup>&dagger;</sup>.  
    **Anonymization, Not Elimination: Utility-Preserved Speech Anonymization.**  
    IEEE Transactions on Audio, Speech and Language Processing, 2026.  
-   [[IEEE](https://ieeexplore.ieee.org/abstract/document/11493752)] [[arXiv](https://arxiv.org/abs/2604.17000)]
+   [[Paper](https://ieeexplore.ieee.org/abstract/document/11493752)]
 
 4. Yanjie An<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang, Qixi Zheng, Yujie Tu, Keqi Deng, Kai Yu, Xie Chen<sup>&dagger;</sup>.  
    **OpenSTBench: Beyond Semantic Evaluation for Speech Translation.**  
