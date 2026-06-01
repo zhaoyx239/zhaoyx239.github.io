@@ -76,7 +76,7 @@ I am a master's student in the School of Computer Science at Shanghai Jiao Tong 
 6. Ruiqi Yan, Wenxi Chen, Zhanxun Liu, Ziyang Ma, Haopeng Lin, Hanlin Wen, Hanke Xie, Jun Wu, Yuzhe Liang, <strong>Yuxiang Zhao</strong>, Pengchao Feng, Jiale Qian, Hao Meng, Yuhang Dai, Shunshun Yin, Ming Tao, Lei Xie, Kai Yu, Xinsheng Wang, Xie Chen<sup>&dagger;</sup>.  
    **SoulX-Duplug: Plug-and-Play Streaming State Prediction Module for Realtime Full-Duplex Speech Conversation.**  
    Submitted to INTERSPEECH 2026.  
-   [[Paper](https://arxiv.org/abs/2603.14877)] [[Code](https://github.com/Soul-AILab/SoulX-Duplug)] [[Model](https://huggingface.co/Soul-AILab/SoulX-Duplug-0.6B)] [[Dataset](https://huggingface.co/datasets/Soul-AILab/SoulX-Duplug-Eval)] [[Demo](https://soulx-duplug.sjtuxlance.com/)]
+   [[Paper](https://arxiv.org/abs/2603.14877)] [[Code](https://github.com/Soul-AILab/SoulX-Duplug)] [[Model](https://huggingface.co/Soul-AILab/SoulX-Duplug-0.6B)] [[Dataset](https://huggingface.co/datasets/Soul-AILab/SoulX-Duplug-Eval)]
 
 <sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.
 
