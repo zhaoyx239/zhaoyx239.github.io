@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuxiang Zhao, speech researcher at SJTU X-LANCE Lab. Research on streaming speech translation, evaluation, and speech privacy and traceability.">
+  <meta name="theme-color" content="#f8f9f5">
+  <link rel="canonical" href="https://zhaoyx239.github.io/">
+  <link rel="stylesheet" href="styles.css">
+  <title>Yuxiang Zhao | Speech Research</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#main"><span aria-hidden="true">YZ</span> Yuxiang Zhao</a>
+      <nav aria-label="Main navigation">
+        <a href="#research-experience">Research</a>
+        <a href="#publications">Papers</a>
+        <a href="#education">Background</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">Speech research · Shanghai Jiao Tong University</p>
+        <h1 id="name">Yuxiang Zhao <span lang="zh-Hans">赵宇翔</span></h1>
+        <p class="intro">I work on speech translation and speech security, with a focus on how systems translate speech in real time, how we evaluate them beyond text accuracy, and how we protect or trace the speech they generate.</p>
+        <p class="affiliation">I am a master’s student at <a href="https://x-lance.github.io/">X-LANCE Lab</a>, advised by <a href="https://chenxie95.github.io/en">Prof. Xie Chen</a>.</p>
+        <div class="hero-links">
+          <a class="primary" href="#research-experience">Explore research <span aria-hidden="true">↓</span></a>
+          <a href="mailto:yuxiangzhao@sjtu.edu.cn">Email</a>
+          <a href="https://github.com/zhaoyx239">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <aside class="research-map" aria-label="Research themes">
+        <p class="eyebrow">Research themes</p>
+        <svg viewBox="0 0 300 74" aria-hidden="true" focusable="false">
+          <path class="baseline" d="M0 37H300"/>
+          <path class="wave" d="M3 34v6m9-9v12m9-19v26m9-31v36m9-25v14m9-36v58m9-47v36m9-29v22m9-17v12m9-25v38m9-49v60m9-44v28m9-21v14m9-10v6m9-15v24m9-32v40m9-47v54m9-39v24m9-17v10m9-22v34m9-42v50m9-41v32m9-23v14m9-15v16m9-26v36m9-46v56m9-37v18m9-14v10m9-16v22m9-26v30m9-21v12m9-10v8m9-7v6"/>
+        </svg>
+        <ol>
+          <li><a href="#translation"><span>01</span> Streaming speech translation <b aria-hidden="true">↘</b></a></li>
+          <li><a href="#trust"><span>02</span> Privacy &amp; traceability <b aria-hidden="true">↘</b></a></li>
+          <li><a href="#interaction"><span>03</span> Real-time speech interaction <b aria-hidden="true">↘</b></a></li>
+        </ol>
+      </aside>
+    </section>
+
+    <section class="section" id="research-experience" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <h2 id="research-heading">Research projects</h2>
+        <p>Models, systems, and benchmarks for spoken communication.</p>
+      </div>
+
+      <div class="track" id="translation">
+        <h3><span>01</span> Streaming speech translation</h3>
+        <div class="project-grid">
+          <article class="project">
+            <p class="eyebrow">End-to-end model</p>
+            <h4>S3-S2ST</h4>
+            <p>A streaming Thinker–Talker model that learns both what to translate and when to speak from semantically aligned supervision. A playback-buffer policy adjusts the balance between translation quality and response delay.</p>
+            <div class="resources"><a href="#paper-s3">Paper</a><a href="https://github.com/QwenAudio/S3-S2ST">Code ↗</a><a href="https://huggingface.co/zhaoyx39/S3-S2ST">Model ↗</a></div>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Real-time system</p>
+            <h4>X-Translator</h4>
+            <p>A multilingual simultaneous interpretation system that connects streaming ASR, machine translation, and speaker-conditioned TTS. It preserves speaker identity in the output, with reported end-to-end latency of 3–5 seconds.</p>
+            <div class="resources"><a href="#paper-xtranslator">Paper</a><a href="https://github.com/zhaoyx239/X-Translator">Code ↗</a><a class="demo" href="https://translate.sjtuxlance.com/">Live demo ↗</a></div>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Evaluation benchmark</p>
+            <h4>OpenSTBench</h4>
+            <p>A shared evaluation protocol for offline and streaming speech-to-text and speech-to-speech translation. It measures translation accuracy alongside speech quality, speaker and emotion preservation, timing consistency, and latency.</p>
+            <div class="resources"><a href="#paper-openstbench">Paper</a><a href="https://github.com/sjtuayj/OpenSTBench">Code &amp; data ↗</a></div>
+          </article>
+        </div>
+        <p class="related">Related work: training compact machine translation models with LLM-generated target text, and studying how coverage, data quality, and sequence-level supervision affect the results.</p>
+      </div>
+
+      <div class="track" id="trust">
+        <h3><span>02</span> Privacy &amp; traceability</h3>
+        <div class="project-grid project-grid-pair">
+          <article class="project">
+            <p class="eyebrow">Model attribution</p>
+            <h4>Traceable TTS</h4>
+            <p>Jointly trains a speech generator and discriminator to attribute synthetic speech to its source model without embedding an explicit watermark, while preserving speech quality.</p>
+            <div class="resources"><a href="#paper-traceable">Paper</a><a href="https://github.com/zhaoyx239/Traceable-TTS">Project repo ↗</a></div>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Speaker &amp; content privacy</p>
+            <h4>Utility-Preserved Speech Anonymization</h4>
+            <p>Combines flow-matching speaker anonymization with generative content editing to reduce identity and content leakage while retaining the data’s usefulness for training ASR and TTS systems.</p>
+            <div class="resources"><a href="#paper-anonymization">Paper</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="track" id="interaction">
+        <h3><span>03</span> Real-time speech interaction</h3>
+        <div class="project-grid project-grid-pair">
+          <article class="project">
+            <p class="eyebrow">Streaming voice conversion</p>
+            <h4>X-VC</h4>
+            <p>Adapts speech to an unseen target voice while preserving the words. It performs one-step conversion in a neural codec’s latent space and processes audio in streaming chunks.</p>
+            <div class="resources"><a href="#paper-xvc">Paper</a><a href="https://github.com/Jerrister/X-VC">Code ↗</a><a href="https://x-vc.github.io/">Audio samples ↗</a></div>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Full-duplex dialogue</p>
+            <h4>SoulX-Duplug</h4>
+            <p>A plug-in module that uses streaming ASR to predict dialogue states and manage when a voice assistant should listen or speak. An accompanying benchmark extends bilingual coverage for turn-taking evaluation.</p>
+            <div class="resources"><a href="#paper-duplug">Paper</a><a href="https://github.com/Soul-AILab/SoulX-Duplug">Code ↗</a><a href="https://huggingface.co/Soul-AILab/SoulX-Duplug-0.6B">Model ↗</a><a href="https://huggingface.co/datasets/Soul-AILab/SoulX-Duplug-Eval">Dataset ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publication-heading">
+      <div class="section-heading">
+        <h2 id="publication-heading">Papers</h2>
+        <p>Publications and preprints. <sup>*</sup> Equal contribution. <sup>†</sup> Corresponding author.</p>
+      </div>
+      <ol class="papers">
+        <li id="paper-s3"><span class="badge">arXiv 2026</span><div>
+          <h3><a href="https://arxiv.org/abs/2610.36777">S3-S2ST: Semantically Supervised Streaming Speech-to-Speech Translation ↗</a></h3>
+          <p><strong>Yuxiang Zhao</strong><sup>*</sup>, Zhiyun Fan<sup>*</sup>, Yu Pu, Yanjie An, Yushen Chen, Wenrui Liang, Baiji Liu, Yunchong Xiao, Zhaoci Liu, Keqi Deng, Kai Yu, Zhifu Gao, Xiangang Li, Xie Chen<sup>†</sup></p>
+        </div></li>
+        <li id="paper-xtranslator"><span class="badge">arXiv 2026</span><div>
+          <h3><a href="https://arxiv.org/abs/2607.17544">X-Translator: A Real-Time Multilingual Speaker-Aware Speech-to-Speech Translation System ↗</a></h3>
+          <p><strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang<sup>*</sup>, Yanjie An<sup>*</sup>, Yanqiao Zhu, Zhanxun Liu, Yushen Chen, Qixi Zheng, Haina Zhu, Yunchong Xiao, Keqi Deng, Shuai Fan, Kai Yu, Xie Chen<sup>†</sup></p>
+        </div></li>
+        <li id="paper-openstbench"><span class="badge">arXiv 2026</span><div>
+          <h3><a href="https://arxiv.org/abs/2605.30792">OpenSTBench: Beyond Semantic Evaluation for Speech Translation ↗</a></h3>
+          <p>Yanjie An<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang, Qixi Zheng, Yujie Tu, Keqi Deng, Kai Yu, Xie Chen<sup>†</sup></p>
+        </div></li>
+        <li id="paper-anonymization"><span class="badge journal">IEEE TASLP 2026</span><div>
+          <h3><a href="https://ieeexplore.ieee.org/abstract/document/11493752">Anonymization, Not Elimination: Utility-Preserved Speech Anonymization ↗</a></h3>
+          <p>Yunchong Xiao<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Ziyang Ma, Shuai Wang, Kai Yu, Jiachun Liao, Xie Chen<sup>†</sup> · <a href="https://arxiv.org/abs/2604.17000">Open preprint</a></p>
+        </div></li>
+        <li id="paper-xvc"><span class="badge journal">ACM MM 2026</span><div>
+          <h3><a href="https://arxiv.org/abs/2604.12456">X-VC: Zero-shot Streaming Voice Conversion in Codec Space ↗</a></h3>
+          <p>Qixi Zheng, <strong>Yuxiang Zhao</strong>, Tianrui Wang, Wenxi Chen, Kele Xu, Yikang Li, Qinyuan Cheng, Xipeng Qiu, Kai Yu, Xie Chen<sup>†</sup></p>
+        </div></li>
+        <li id="paper-duplug"><span class="badge">arXiv 2026</span><div>
+          <h3><a href="https://arxiv.org/abs/2603.14877">SoulX-Duplug: Plug-and-Play Streaming State Prediction Module for Realtime Full-Duplex Speech Conversation ↗</a></h3>
+          <p>Ruiqi Yan, Wenxi Chen, Zhanxun Liu, Ziyang Ma, Haopeng Lin, Hanlin Wen, Hanke Xie, Jun Wu, Yuzhe Liang, <strong>Yuxiang Zhao</strong>, Pengchao Feng, Jiale Qian, Hao Meng, Yuhang Dai, Shunshun Yin, Ming Tao, Lei Xie, Kai Yu, Xinsheng Wang, Xie Chen<sup>†</sup></p>
+        </div></li>
+        <li id="paper-traceable"><span class="badge">arXiv 2025</span><div>
+          <h3><a href="https://arxiv.org/abs/2507.03887">Traceable TTS: Toward Watermark-Free TTS with Strong Traceability ↗</a></h3>
+          <p><strong>Yuxiang Zhao</strong>, Yunchong Xiao, Yushen Chen, Zhikang Niu, Shuai Wang, Kai Yu, Xie Chen<sup>†</sup></p>
+        </div></li>
+      </ol>
+    </section>
+
+    <section class="section background" aria-labelledby="background-heading">
+      <div class="section-heading"><h2 id="background-heading">Background</h2></div>
+      <div class="background-grid">
+        <div id="education">
+          <h3>Education</h3>
+          <dl>
+            <dt>Shanghai Jiao Tong University</dt><dd>M.S. student, School of Computer Science · 2024–present</dd>
+            <dt>Shanghai Jiao Tong University</dt><dd>B.Eng., Civil Engineering · 2020–2024</dd>
+          </dl>
+        </div>
+        <div id="internship">
+          <h3>Research internships</h3>
+          <dl>
+            <dt>Alibaba Group · ATH, Token Foundry</dt><dd>Research Intern · Jul 2026–present</dd>
+            <dt>AISpeech</dt><dd>Speech R&amp;D Intern · Jul 2025–Jun 2026</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>Yuxiang Zhao · <a href="mailto:yuxiangzhao@sjtu.edu.cn">yuxiangzhao@sjtu.edu.cn</a></span>
+    <a href="#main">Back to top ↑</a>
+  </footer>
+</body>
+</html>
