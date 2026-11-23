@@ -46,6 +46,8 @@ sup { line-height: 0; }
 .section-heading { margin-bottom: 1.65rem; }
 .section-heading h2 { font-size: clamp(2.2rem, 4vw, 3.5rem); letter-spacing: -.045em; }
 .section-heading p { color: var(--muted); margin-top: .45rem; }
+.paper-topic { margin: 0 0 .55rem; color: var(--green); font-size: 1rem; }
+.papers + .paper-topic { margin-top: 1.5rem; }
 .papers { padding: 0; margin: 0; list-style: none; }
 .papers li { display: grid; grid-template-columns: 8.75rem minmax(0, 1fr); align-items: start; gap: .5rem 1.25rem; border-top: 1px solid var(--line); padding: 1rem .45rem; }
 .papers li:last-child { border-bottom: 1px solid var(--line); }
