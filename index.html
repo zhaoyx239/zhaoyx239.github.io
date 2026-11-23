@@ -44,74 +44,78 @@
         <ol>
           <li><a href="#translation"><span>01</span> Streaming speech translation <b aria-hidden="true">↘</b></a></li>
           <li><a href="#trust"><span>02</span> Privacy &amp; traceability <b aria-hidden="true">↘</b></a></li>
-          <li><a href="#interaction"><span>03</span> Real-time speech interaction <b aria-hidden="true">↘</b></a></li>
         </ol>
       </aside>
     </section>
 
     <section class="section" id="research-experience" aria-labelledby="research-heading">
       <div class="section-heading">
-        <h2 id="research-heading">Research projects</h2>
-        <p>Models, systems, and benchmarks for spoken communication.</p>
+        <h2 id="research-heading">Selected research projects</h2>
+        <p>Projects I contributed to most directly. The <a href="#publications">full publication list</a> is below.</p>
       </div>
 
       <div class="track" id="translation">
         <h3><span>01</span> Streaming speech translation</h3>
-        <div class="project-grid">
+        <div class="project-list">
           <article class="project">
-            <p class="eyebrow">End-to-end model</p>
             <h4>S3-S2ST</h4>
-            <p>A streaming Thinker–Talker model that learns both what to translate and when to speak from semantically aligned supervision. A playback-buffer policy adjusts the balance between translation quality and response delay.</p>
-            <div class="resources"><a href="#paper-s3">Paper</a><a href="https://github.com/QwenAudio/S3-S2ST">Code ↗</a><a href="https://huggingface.co/zhaoyx39/S3-S2ST">Model ↗</a></div>
+            <ul class="contributions">
+              <li>Co-developed an end-to-end Thinker–Talker model that translates incoming speech incrementally and generates spoken output as it listens.</li>
+              <li>Used semantic alignment to train the model to learn what to translate and when to speak, and added a playback-buffer policy to balance translation quality against delay.</li>
+            </ul>
+            <div class="resources">
+              <a href="https://github.com/QwenAudio/S3-S2ST">Code</a>
+              <a href="https://huggingface.co/zhaoyx39/S3-S2ST">Model</a>
+              <a class="metric" href="https://github.com/QwenAudio/S3-S2ST/stargazers"><img height="20" alt="GitHub stars for S3-S2ST" src="https://img.shields.io/github/stars/QwenAudio/S3-S2ST?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
+              <a class="metric" href="https://huggingface.co/zhaoyx39/S3-S2ST"><img height="20" alt="Hugging Face downloads for S3-S2ST over the last 30 days" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Fzhaoyx39%2FS3-S2ST&amp;query=%24.downloads&amp;label=HF%20downloads%20%2F%2030d&amp;style=flat-square&amp;color=235d49"></a>
+            </div>
           </article>
           <article class="project">
-            <p class="eyebrow">Real-time system</p>
             <h4>X-Translator</h4>
-            <p>A multilingual simultaneous interpretation system that connects streaming ASR, machine translation, and speaker-conditioned TTS. It preserves speaker identity in the output, with reported end-to-end latency of 3–5 seconds.</p>
-            <div class="resources"><a href="#paper-xtranslator">Paper</a><a href="https://github.com/zhaoyx239/X-Translator">Code ↗</a><a class="demo" href="https://translate.sjtuxlance.com/">Live demo ↗</a></div>
+            <ul class="contributions">
+              <li>Co-built a multilingual interpretation pipeline that connects streaming speech recognition, machine translation, and speaker-conditioned speech synthesis.</li>
+              <li>Helped release a live demo that preserves the source speaker’s voice across languages, with reported end-to-end latency of 3–5 seconds.</li>
+            </ul>
+            <div class="resources">
+              <a href="https://github.com/zhaoyx239/X-Translator">Code</a>
+              <a class="demo" href="https://translate.sjtuxlance.com/">Live demo</a>
+              <a class="metric" href="https://github.com/zhaoyx239/X-Translator/stargazers"><img height="20" alt="GitHub stars for X-Translator" src="https://img.shields.io/github/stars/zhaoyx239/X-Translator?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
+            </div>
           </article>
           <article class="project">
-            <p class="eyebrow">Evaluation benchmark</p>
             <h4>OpenSTBench</h4>
-            <p>A shared evaluation protocol for offline and streaming speech-to-text and speech-to-speech translation. It measures translation accuracy alongside speech quality, speaker and emotion preservation, timing consistency, and latency.</p>
-            <div class="resources"><a href="#paper-openstbench">Paper</a><a href="https://github.com/sjtuayj/OpenSTBench">Code &amp; data ↗</a></div>
+            <ul class="contributions">
+              <li>Co-developed a shared evaluation protocol for speech-to-text and speech-to-speech translation in both offline and streaming settings.</li>
+              <li>Helped extend evaluation beyond translation accuracy to cover speech quality, speaker and emotion preservation, timing consistency, and latency.</li>
+            </ul>
+            <div class="resources">
+              <a href="https://github.com/sjtuayj/OpenSTBench">Code &amp; data</a>
+              <a class="metric" href="https://github.com/sjtuayj/OpenSTBench/stargazers"><img height="20" alt="GitHub stars for OpenSTBench" src="https://img.shields.io/github/stars/sjtuayj/OpenSTBench?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
+            </div>
           </article>
         </div>
-        <p class="related">Related work: training compact machine translation models with LLM-generated target text, and studying how coverage, data quality, and sequence-level supervision affect the results.</p>
       </div>
 
       <div class="track" id="trust">
         <h3><span>02</span> Privacy &amp; traceability</h3>
-        <div class="project-grid project-grid-pair">
+        <div class="project-list">
           <article class="project">
-            <p class="eyebrow">Model attribution</p>
             <h4>Traceable TTS</h4>
-            <p>Jointly trains a speech generator and discriminator to attribute synthetic speech to its source model without embedding an explicit watermark, while preserving speech quality.</p>
-            <div class="resources"><a href="#paper-traceable">Paper</a><a href="https://github.com/zhaoyx239/Traceable-TTS">Project repo ↗</a></div>
+            <ul class="contributions">
+              <li>Proposed a watermark-free approach that jointly trains a speech generator and discriminator to attribute synthetic speech to its source model.</li>
+              <li>Evaluated whether attribution generalizes across domains without sacrificing speech quality.</li>
+            </ul>
+            <div class="resources">
+              <a href="https://github.com/zhaoyx239/Traceable-TTS">Project repo</a>
+              <a class="metric" href="https://github.com/zhaoyx239/Traceable-TTS/stargazers"><img height="20" alt="GitHub stars for Traceable TTS" src="https://img.shields.io/github/stars/zhaoyx239/Traceable-TTS?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
+            </div>
           </article>
           <article class="project">
-            <p class="eyebrow">Speaker &amp; content privacy</p>
             <h4>Utility-Preserved Speech Anonymization</h4>
-            <p>Combines flow-matching speaker anonymization with generative content editing to reduce identity and content leakage while retaining the data’s usefulness for training ASR and TTS systems.</p>
-            <div class="resources"><a href="#paper-anonymization">Paper</a></div>
-          </article>
-        </div>
-      </div>
-
-      <div class="track" id="interaction">
-        <h3><span>03</span> Real-time speech interaction</h3>
-        <div class="project-grid project-grid-pair">
-          <article class="project">
-            <p class="eyebrow">Streaming voice conversion</p>
-            <h4>X-VC</h4>
-            <p>Adapts speech to an unseen target voice while preserving the words. It performs one-step conversion in a neural codec’s latent space and processes audio in streaming chunks.</p>
-            <div class="resources"><a href="#paper-xvc">Paper</a><a href="https://github.com/Jerrister/X-VC">Code ↗</a><a href="https://x-vc.github.io/">Audio samples ↗</a></div>
-          </article>
-          <article class="project">
-            <p class="eyebrow">Full-duplex dialogue</p>
-            <h4>SoulX-Duplug</h4>
-            <p>A plug-in module that uses streaming ASR to predict dialogue states and manage when a voice assistant should listen or speak. An accompanying benchmark extends bilingual coverage for turn-taking evaluation.</p>
-            <div class="resources"><a href="#paper-duplug">Paper</a><a href="https://github.com/Soul-AILab/SoulX-Duplug">Code ↗</a><a href="https://huggingface.co/Soul-AILab/SoulX-Duplug-0.6B">Model ↗</a><a href="https://huggingface.co/datasets/Soul-AILab/SoulX-Duplug-Eval">Dataset ↗</a></div>
+            <ul class="contributions">
+              <li>Co-built a pipeline that combines flow-matching speaker anonymization with generative editing of sensitive spoken content.</li>
+              <li>Evaluated whether the anonymized speech still works as training data for speech recognition and synthesis while reducing identity and content leakage.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -141,11 +145,11 @@
         </div></li>
         <li id="paper-xvc"><span class="badge journal">ACM MM 2026</span><div>
           <h3><a href="https://arxiv.org/abs/2604.12456">X-VC: Zero-shot Streaming Voice Conversion in Codec Space ↗</a></h3>
-          <p>Qixi Zheng, <strong>Yuxiang Zhao</strong>, Tianrui Wang, Wenxi Chen, Kele Xu, Yikang Li, Qinyuan Cheng, Xipeng Qiu, Kai Yu, Xie Chen<sup>†</sup></p>
+          <p>Qixi Zheng, <strong>Yuxiang Zhao</strong>, Tianrui Wang, Wenxi Chen, Kele Xu, Yikang Li, Qinyuan Cheng, Xipeng Qiu, Kai Yu, Xie Chen<sup>†</sup> · <a href="https://github.com/Jerrister/X-VC">Code</a> · <a href="https://x-vc.github.io/">Audio samples</a></p>
         </div></li>
         <li id="paper-duplug"><span class="badge">arXiv 2026</span><div>
           <h3><a href="https://arxiv.org/abs/2603.14877">SoulX-Duplug: Plug-and-Play Streaming State Prediction Module for Realtime Full-Duplex Speech Conversation ↗</a></h3>
-          <p>Ruiqi Yan, Wenxi Chen, Zhanxun Liu, Ziyang Ma, Haopeng Lin, Hanlin Wen, Hanke Xie, Jun Wu, Yuzhe Liang, <strong>Yuxiang Zhao</strong>, Pengchao Feng, Jiale Qian, Hao Meng, Yuhang Dai, Shunshun Yin, Ming Tao, Lei Xie, Kai Yu, Xinsheng Wang, Xie Chen<sup>†</sup></p>
+          <p>Ruiqi Yan, Wenxi Chen, Zhanxun Liu, Ziyang Ma, Haopeng Lin, Hanlin Wen, Hanke Xie, Jun Wu, Yuzhe Liang, <strong>Yuxiang Zhao</strong>, Pengchao Feng, Jiale Qian, Hao Meng, Yuhang Dai, Shunshun Yin, Ming Tao, Lei Xie, Kai Yu, Xinsheng Wang, Xie Chen<sup>†</sup> · <a href="https://github.com/Soul-AILab/SoulX-Duplug">Code</a> · <a href="https://huggingface.co/Soul-AILab/SoulX-Duplug-0.6B">Model</a> · <a href="https://huggingface.co/datasets/Soul-AILab/SoulX-Duplug-Eval">Dataset</a></p>
         </div></li>
         <li id="paper-traceable"><span class="badge">arXiv 2025</span><div>
           <h3><a href="https://arxiv.org/abs/2507.03887">Traceable TTS: Toward Watermark-Free TTS with Strong Traceability ↗</a></h3>
