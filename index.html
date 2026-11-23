@@ -15,7 +15,6 @@
     <div class="wrap header-inner">
       <a class="brand" href="#main"><span aria-hidden="true">YZ</span> Yuxiang Zhao</a>
       <nav aria-label="Main navigation">
-        <a href="#research-experience">Research</a>
         <a href="#publications">Papers</a>
         <a href="#education">Background</a>
       </nav>
@@ -24,100 +23,14 @@
 
   <main class="wrap" id="main">
     <section class="hero" aria-labelledby="name">
-      <div>
-        <p class="eyebrow">Speech research · Shanghai Jiao Tong University</p>
-        <h1 id="name">Yuxiang Zhao <span lang="zh-Hans">赵宇翔</span></h1>
-        <p class="intro">I work on speech translation and speech security, with a focus on how systems translate speech in real time, how we evaluate them beyond text accuracy, and how we protect or trace the speech they generate.</p>
-        <p class="affiliation">I am a master’s student at <a href="https://x-lance.github.io/">X-LANCE Lab</a>, advised by <a href="https://chenxie95.github.io/en">Prof. Xie Chen</a>.</p>
-        <div class="hero-links">
-          <a class="primary" href="#research-experience">Explore research <span aria-hidden="true">↓</span></a>
-          <a href="mailto:yuxiangzhao@sjtu.edu.cn">Email</a>
-          <a href="https://github.com/zhaoyx239">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <aside class="research-map" aria-label="Research themes">
-        <p class="eyebrow">Research themes</p>
-        <svg viewBox="0 0 300 74" aria-hidden="true" focusable="false">
-          <path class="baseline" d="M0 37H300"/>
-          <path class="wave" d="M3 34v6m9-9v12m9-19v26m9-31v36m9-25v14m9-36v58m9-47v36m9-29v22m9-17v12m9-25v38m9-49v60m9-44v28m9-21v14m9-10v6m9-15v24m9-32v40m9-47v54m9-39v24m9-17v10m9-22v34m9-42v50m9-41v32m9-23v14m9-15v16m9-26v36m9-46v56m9-37v18m9-14v10m9-16v22m9-26v30m9-21v12m9-10v8m9-7v6"/>
-        </svg>
-        <ol>
-          <li><a href="#translation"><span>01</span> Streaming speech translation <b aria-hidden="true">↘</b></a></li>
-          <li><a href="#trust"><span>02</span> Privacy &amp; traceability <b aria-hidden="true">↘</b></a></li>
-        </ol>
-      </aside>
-    </section>
-
-    <section class="section" id="research-experience" aria-labelledby="research-heading">
-      <div class="section-heading">
-        <h2 id="research-heading">Selected research projects</h2>
-        <p>Projects I contributed to most directly. The <a href="#publications">full publication list</a> is below.</p>
-      </div>
-
-      <div class="track" id="translation">
-        <h3><span>01</span> Streaming speech translation</h3>
-        <div class="project-list">
-          <article class="project">
-            <h4>S3-S2ST</h4>
-            <ul class="contributions">
-              <li>Co-developed an end-to-end Thinker–Talker model that translates incoming speech incrementally and generates spoken output as it listens.</li>
-              <li>Used semantic alignment to train the model to learn what to translate and when to speak, and added a playback-buffer policy to balance translation quality against delay.</li>
-            </ul>
-            <div class="resources">
-              <a href="https://github.com/QwenAudio/S3-S2ST">Code</a>
-              <a href="https://huggingface.co/zhaoyx39/S3-S2ST">Model</a>
-              <a class="metric" href="https://github.com/QwenAudio/S3-S2ST/stargazers"><img height="20" alt="GitHub stars for S3-S2ST" src="https://img.shields.io/github/stars/QwenAudio/S3-S2ST?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
-              <a class="metric" href="https://huggingface.co/zhaoyx39/S3-S2ST"><img height="20" alt="Hugging Face downloads for S3-S2ST over the last 30 days" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Fzhaoyx39%2FS3-S2ST&amp;query=%24.downloads&amp;label=HF%20downloads%20%2F%2030d&amp;style=flat-square&amp;color=235d49"></a>
-            </div>
-          </article>
-          <article class="project">
-            <h4>X-Translator</h4>
-            <ul class="contributions">
-              <li>Co-built a multilingual interpretation pipeline that connects streaming speech recognition, machine translation, and speaker-conditioned speech synthesis.</li>
-              <li>Helped release a live demo that preserves the source speaker’s voice across languages, with reported end-to-end latency of 3–5 seconds.</li>
-            </ul>
-            <div class="resources">
-              <a href="https://github.com/zhaoyx239/X-Translator">Code</a>
-              <a class="demo" href="https://translate.sjtuxlance.com/">Live demo</a>
-              <a class="metric" href="https://github.com/zhaoyx239/X-Translator/stargazers"><img height="20" alt="GitHub stars for X-Translator" src="https://img.shields.io/github/stars/zhaoyx239/X-Translator?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
-            </div>
-          </article>
-          <article class="project">
-            <h4>OpenSTBench</h4>
-            <ul class="contributions">
-              <li>Co-developed a shared evaluation protocol for speech-to-text and speech-to-speech translation in both offline and streaming settings.</li>
-              <li>Helped extend evaluation beyond translation accuracy to cover speech quality, speaker and emotion preservation, timing consistency, and latency.</li>
-            </ul>
-            <div class="resources">
-              <a href="https://github.com/sjtuayj/OpenSTBench">Code &amp; data</a>
-              <a class="metric" href="https://github.com/sjtuayj/OpenSTBench/stargazers"><img height="20" alt="GitHub stars for OpenSTBench" src="https://img.shields.io/github/stars/sjtuayj/OpenSTBench?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="track" id="trust">
-        <h3><span>02</span> Privacy &amp; traceability</h3>
-        <div class="project-list">
-          <article class="project">
-            <h4>Traceable TTS</h4>
-            <ul class="contributions">
-              <li>Proposed a watermark-free approach that jointly trains a speech generator and discriminator to attribute synthetic speech to its source model.</li>
-              <li>Evaluated whether attribution generalizes across domains without sacrificing speech quality.</li>
-            </ul>
-            <div class="resources">
-              <a href="https://github.com/zhaoyx239/Traceable-TTS">Project repo</a>
-              <a class="metric" href="https://github.com/zhaoyx239/Traceable-TTS/stargazers"><img height="20" alt="GitHub stars for Traceable TTS" src="https://img.shields.io/github/stars/zhaoyx239/Traceable-TTS?style=flat-square&amp;label=GitHub%20stars&amp;color=235d49"></a>
-            </div>
-          </article>
-          <article class="project">
-            <h4>Utility-Preserved Speech Anonymization</h4>
-            <ul class="contributions">
-              <li>Co-built a pipeline that combines flow-matching speaker anonymization with generative editing of sensitive spoken content.</li>
-              <li>Evaluated whether the anonymized speech still works as training data for speech recognition and synthesis while reducing identity and content leakage.</li>
-            </ul>
-          </article>
-        </div>
+      <p class="eyebrow">Speech research · Shanghai Jiao Tong University</p>
+      <h1 id="name">Yuxiang Zhao <span lang="zh-Hans">赵宇翔</span></h1>
+      <p class="intro">I work on speech translation and speech security, with a focus on how systems translate speech in real time, how we evaluate them beyond text accuracy, and how we protect or trace the speech they generate.</p>
+      <p class="affiliation">I am a master’s student at <a href="https://x-lance.github.io/">X-LANCE Lab</a>, advised by <a href="https://chenxie95.github.io/en">Prof. Xie Chen</a>.</p>
+      <div class="hero-links">
+        <a class="primary" href="#publications">View publications <span aria-hidden="true">↓</span></a>
+        <a href="mailto:yuxiangzhao@sjtu.edu.cn">Email</a>
+        <a href="https://github.com/zhaoyx239">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
@@ -129,15 +42,15 @@
       <ol class="papers">
         <li id="paper-s3"><span class="badge">arXiv 2026</span><div>
           <h3><a href="https://arxiv.org/abs/2610.36777">S3-S2ST: Semantically Supervised Streaming Speech-to-Speech Translation ↗</a></h3>
-          <p><strong>Yuxiang Zhao</strong><sup>*</sup>, Zhiyun Fan<sup>*</sup>, Yu Pu, Yanjie An, Yushen Chen, Wenrui Liang, Baiji Liu, Yunchong Xiao, Zhaoci Liu, Keqi Deng, Kai Yu, Zhifu Gao, Xiangang Li, Xie Chen<sup>†</sup></p>
+          <p><strong>Yuxiang Zhao</strong><sup>*</sup>, Zhiyun Fan<sup>*</sup>, Yu Pu, Yanjie An, Yushen Chen, Wenrui Liang, Baiji Liu, Yunchong Xiao, Zhaoci Liu, Keqi Deng, Kai Yu, Zhifu Gao, Xiangang Li, Xie Chen<sup>†</sup> · <a href="https://github.com/QwenAudio/S3-S2ST">Code</a> · <a href="https://huggingface.co/zhaoyx39/S3-S2ST">Model</a></p>
         </div></li>
         <li id="paper-xtranslator"><span class="badge">arXiv 2026</span><div>
           <h3><a href="https://arxiv.org/abs/2607.17544">X-Translator: A Real-Time Multilingual Speaker-Aware Speech-to-Speech Translation System ↗</a></h3>
-          <p><strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang<sup>*</sup>, Yanjie An<sup>*</sup>, Yanqiao Zhu, Zhanxun Liu, Yushen Chen, Qixi Zheng, Haina Zhu, Yunchong Xiao, Keqi Deng, Shuai Fan, Kai Yu, Xie Chen<sup>†</sup></p>
+          <p><strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang<sup>*</sup>, Yanjie An<sup>*</sup>, Yanqiao Zhu, Zhanxun Liu, Yushen Chen, Qixi Zheng, Haina Zhu, Yunchong Xiao, Keqi Deng, Shuai Fan, Kai Yu, Xie Chen<sup>†</sup> · <a href="https://github.com/zhaoyx239/X-Translator">Code</a> · <a href="https://translate.sjtuxlance.com/">Live demo</a></p>
         </div></li>
         <li id="paper-openstbench"><span class="badge">arXiv 2026</span><div>
           <h3><a href="https://arxiv.org/abs/2605.30792">OpenSTBench: Beyond Semantic Evaluation for Speech Translation ↗</a></h3>
-          <p>Yanjie An<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang, Qixi Zheng, Yujie Tu, Keqi Deng, Kai Yu, Xie Chen<sup>†</sup></p>
+          <p>Yanjie An<sup>*</sup>, <strong>Yuxiang Zhao</strong><sup>*</sup>, Yichi Zhang, Qixi Zheng, Yujie Tu, Keqi Deng, Kai Yu, Xie Chen<sup>†</sup> · <a href="https://github.com/sjtuayj/OpenSTBench">Code &amp; data</a></p>
         </div></li>
         <li id="paper-anonymization"><span class="badge journal">IEEE TASLP 2026</span><div>
           <h3><a href="https://ieeexplore.ieee.org/abstract/document/11493752">Anonymization, Not Elimination: Utility-Preserved Speech Anonymization ↗</a></h3>
@@ -153,7 +66,7 @@
         </div></li>
         <li id="paper-traceable"><span class="badge">arXiv 2025</span><div>
           <h3><a href="https://arxiv.org/abs/2507.03887">Traceable TTS: Toward Watermark-Free TTS with Strong Traceability ↗</a></h3>
-          <p><strong>Yuxiang Zhao</strong>, Yunchong Xiao, Yushen Chen, Zhikang Niu, Shuai Wang, Kai Yu, Xie Chen<sup>†</sup></p>
+          <p><strong>Yuxiang Zhao</strong>, Yunchong Xiao, Yushen Chen, Zhikang Niu, Shuai Wang, Kai Yu, Xie Chen<sup>†</sup> · <a href="https://github.com/zhaoyx239/Traceable-TTS">Project repo</a></p>
         </div></li>
       </ol>
     </section>
